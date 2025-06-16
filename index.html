@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eldin Beric – Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background-color: #0f0f0f;
+      color: #f1f1f1;
+      line-height: 1.6;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+    .name {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    .subtitle {
+      font-size: 1rem;
+      color: #aaa;
+    }
+    .section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid #facc15;
+      padding-left: 0.75rem;
+    }
+    .card {
+      background-color: #1a1a1a;
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    }
+    a {
+      color: #facc15;
+      text-decoration: none;
+    }
+    .logo {
+      height: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <div class="name">Eldin Beric</div>
+        <div class="subtitle">Student: Technical Computer Engineering & Werkstudent bei Finanz Informatik</div>
+      </div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Finanzinformatik_Logo.svg" class="logo" alt="Finanz Informatik Logo" />
+    </header>
+
+    <section class="section" id="about">
+      <h2>About Me</h2>
+      <div class="card">
+        I'm a passionate and ambitious student of Technical Computer Engineering based in Hannover. With experience in both programming and project management, I enjoy solving real-world problems through smart, elegant, and efficient digital solutions. Currently, I'm a working student at Finanz Informatik GmbH, where I contribute to IT services for Germany’s largest financial institutions.
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <h2>What I'm Doing</h2>
+      <div class="card">🔧 Web Development – Creating responsive and modern websites with clean code.</div>
+      <div class="card">📱 App Prototyping – Turning ideas into interactive mobile app designs.</div>
+      <div class="card">📊 Project Management – Organizing and leading tech projects efficiently.</div>
+      <div class="card">🤖 Automation – Scripting and automating tasks with Python & Bash.</div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        📍 Hannover, Germany<br>
+        📧 <a href="mailto:eldin-beric@hotmail.de">eldin-beric@hotmail.de</a><br>
+        🔗 <a href="https://www.linkedin.com/in/eldin-beric-b8ab64220/" target="_blank">LinkedIn Profile</a>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    ScrollReveal().reveal('.section', {
+      delay: 300,
+      distance: '40px',
+      origin: 'bottom',
+      duration: 800,
+      easing: 'ease-in-out',
+      reset: false
+    });
+  </script>
+</body>
+</html>
